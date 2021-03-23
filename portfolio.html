@@ -256,7 +256,7 @@
 				</div>
 			</section>
 		</main>
-		<!--============= Footer ==============-->
+		<!--================== Footer ===================-->
 		<footer class="footer-section">
 			<div class="container footer-flexbox">
 				<div class="footer-information footer-flexbox">
@@ -266,7 +266,7 @@
 							Studio
 						</a>
 
-						<!---============ Address =============--->
+						<!---==================== Footer-Address =====================--->
 						<address class="footer-adress location-adress">
 							<p>г. Киев, пр-т Леси Украинки, 26</p>
 						</address>
@@ -274,13 +274,13 @@
 						<address class="footer-adress">
 							<ul class="footer-contacts list">
 								<li class="footer-contacts adress">
-									<a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer" class="link">
+									<a class="link" href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer">
 										info@devstudio.com
 									</a>
 								</li>
 
 								<li class="footer-contacts adress">
-									<a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+									<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
 								</li>
 							</ul>
 						</address>
@@ -325,23 +325,37 @@
 						</ul>
 					</div>
 				</div>
-				<div>
-					<div class="footer-information form">
-						<label class="call-to-action" for="footer-input-size">
-							<b>подпишитесь на рассылку</b>
-						</label>
 
-						<form class="js-speaker-form">
-							<label for="mail"></label>
-							<input class="footer-input-size" type="email" name="mail" id="mail" />
+				<!--========================== FORM ==========================-->
+				<!--==========================Footer FORM ==========================-->
 
-							<button class="footer-button" type="submit">Подписаться</button>
-							<br />
-						</form>
-					</div>
+				<div class="footer-information form">
+					<label class="call-to-action" for="footer-input-size">
+						<b>подпишитесь на рассылку</b>
+					</label>
+
+					<form class="js-speaker-form" action="#" autocomplete="off">
+						<input
+							class="footer-input-size"
+							type="email"
+							name="mail"
+							id="footer-input-size"
+							placeholder="E-mail"
+							required
+							oninvalid="this.setCustomValidity('You will not pass!!! сначала заполни форму')"
+							oniput="this.setCustomValidity('You will not pass!!! сначала заполни форму')"
+						/>
+						<button class="footer-button" type="submit">
+							Подписаться
+							<svg class="footer-icon-submit" width="24" height="24">
+								<use href="./img/iconmoon/sprite.svg#icon-icon-send"></use>
+							</svg>
+						</button>
+					</form>
 				</div>
 			</div>
 		</footer>
+
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
