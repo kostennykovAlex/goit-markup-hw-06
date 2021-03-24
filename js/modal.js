@@ -12,3 +12,6 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+// function toggleModal() {
+//     refs.modal.classList.toggle('is-hidden');
